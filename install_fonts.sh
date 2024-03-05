@@ -24,7 +24,6 @@ fc-cache -f
 
 echo "Done. Now you can delete the tarball file $_gf.tar.gz if you wish."
 cd ~
-rm -rf $_temp
 
 echo "Clearing font cache"
 sudo fc-cache -fv
