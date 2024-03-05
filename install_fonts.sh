@@ -1,5 +1,11 @@
 _wgeturl="https://github.com/google/fonts/archive/main.tar.gz"
 _gf="google-fonts"
+_temp="/workstream/_temp"
+
+echo "Making temp folder"
+sudo mkdir -p $_temp
+cd $_temp
+
 
 echo "Connecting to Github server to download fonts..."
 wget $_wgeturl -O $_gf.tar.gz
@@ -17,3 +23,4 @@ echo "Updating the font cache"
 fc-cache -f
 
 echo "Done. Now you can delete the tarball file $_gf.tar.gz if you wish."
+rm -rf $_temp/$_gf.tar.gz
