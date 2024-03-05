@@ -23,4 +23,5 @@ echo "Updating the font cache"
 fc-cache -f
 
 echo "Done. Now you can delete the tarball file $_gf.tar.gz if you wish."
-rm -rf $_temp/$_gf.tar.gz
+cd ~
+rm -rf $_temp
